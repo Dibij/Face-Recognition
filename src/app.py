@@ -4,13 +4,13 @@ import tensorflow as tf
 from deepface import DeepFace
 
 # Load your trained model
-model = tf.keras.models.load_model(r'C:\Users\Kshitish Pandit\Desktop\Tutorial\OpenCV\Security Camera\Face_Recognition_Model.h5')
+model = tf.keras.models.load_model(r'model\Face_Recognition_Model.h5')
 
 # Define class labels for your face recognition model
-characters = ['Devaki', 'Dikshya', 'Kshitish', 'Unknown']  # Add more names if needed
+characters = ['Subject1', 'Subject2', 'Subject3', 'Unknown']  # Add more names if needed
 
 # Load Haar Cascade for face detection
-haar_cascade = cv.CascadeClassifier(r'C:\Users\Kshitish Pandit\Desktop\Tutorial\OpenCV\harr_face.xml')
+haar_cascade = cv.CascadeClassifier(r'haar_cascade\harr_face.xml')
 
 # Function to prepare the image for TensorFlow model
 def prepare(img):
