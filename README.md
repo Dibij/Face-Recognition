@@ -55,9 +55,6 @@ The system will open a video window displaying the webcam feed, where it will pe
 Press q to quit the video feed.
 
 File Structure
-pgsql
-Copy
-Edit
 📂 Project Root
 ├── 📂 src
 │   ├── main.py  # Main script to capture video, perform face recognition & analysis
